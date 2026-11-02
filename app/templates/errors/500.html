@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Server Error | Claudia{% endblock %}
+
+{% block content %}
+<section class="error-page">
+    <h1>500</h1>
+
+    <h2>Something Went Wrong</h2>
+
+    <p>
+        We're experiencing a technical problem.
+        Please try again later.
+    </p>
+
+    <a href="{{ url_for('main.home') }}" class="btn">
+        Return Home
+    </a>
+</section>
+{% endblock %}

@@ -1,0 +1,161 @@
+
+{% extends "base.html" %}
+
+{% block title %}Claudia | Skirts & Outdoor Shoes{% endblock %}
+
+{% block description %}
+Discover stylish skirts and outdoor shoes by Claudia. Style, comfort and confidence.
+{% endblock %}
+
+{% block header %}
+
+<nav class="navbar">
+    <a href="#home" class="logo">CLAUDIA<span>.</span></a>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a href="#contact" class="nav-cta">Get in Touch</a>
+</nav>
+
+{% endblock %}
+
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+        <p class="eyebrow">STYLE · COMFORT · CONFIDENCE</p>
+
+        <h1>Find Your Style.<br>Make It Yours.</h1>
+
+        <p class="hero-description">
+            Discover beautiful skirts and stylish outdoor shoes
+            designed to complement your everyday look.
+        </p>
+
+        <a href="#collections" class="btn-primary">
+            Explore Collections
+        </a>
+    </div>
+
+    <div class="hero-image">
+        <img
+            src="{{ url_for('static', filename='images/hero.jpg') }}"
+            alt="Fashion collection featuring stylish clothing and footwear"
+        >
+    </div>
+
+</section>
+
+
+<!-- Collections Section -->
+<section class="collections" id="collections">
+
+    <div class="section-heading">
+        <p class="eyebrow">EXPLORE OUR COLLECTION</p>
+        <h2>Find Your Next Favourite</h2>
+        <p>
+            Explore our selection of fashion and footwear.
+        </p>
+    </div>
+
+    <div class="collection-grid">
+
+        <article class="collection-card">
+            <img
+                src="{{ url_for('static', filename='images/outdoor-shoes.jpg') }}"
+                alt="Women's outdoor shoes"
+            >
+
+            <div class="collection-info">
+                <h3>Outdoor Shoes</h3>
+                <p>Comfort and style for every adventure.</p>
+                <a href="#contact">Enquire Now &rarr;</a>
+            </div>
+        </article>
+
+        <article class="collection-card">
+            <img
+                src="{{ url_for('static', filename='images/skirts.jpg') }}"
+                alt="Women's fashion skirts"
+            >
+
+            <div class="collection-info">
+                <h3>Skirts</h3>
+                <p>Express your personality through style.</p>
+                <a href="#contact">Enquire Now &rarr;</a>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- About Section -->
+<section class="about" id="about">
+
+    <div class="about-content">
+        <p class="eyebrow">A LITTLE ABOUT US</p>
+
+        <h2>Style Is a Way to Express Yourself.</h2>
+
+        <p>
+            We bring together stylish skirts and outdoor shoes
+            for women who appreciate fashion, comfort and
+            expressing their individuality.
+        </p>
+
+        <a href="#contact" class="btn-primary">
+            Get in Touch
+        </a>
+    </div>
+
+</section>
+
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+
+    <p class="eyebrow">LET'S CONNECT</p>
+
+    <h2>Found Something You Love?</h2>
+
+    <p>
+        Get in touch with us on WhatsApp to make an enquiry.
+    </p>
+
+    <a
+        href="https://wa.me/254768850943"
+        class="btn-primary"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Chat with CLAUDIA.
+    </a>
+
+</section>
+
+{% endblock %}
+
+
+{% block footer %}
+
+<div class="footer-content">
+    <a href="#home" class="logo">CLAUDIA<span>.</span></a>
+
+    <p>Style, comfort and confidence.</p>
+
+    <p class="copyright">
+        &copy; 2026 Claudia. All rights reserved.
+    </p>
+</div>
+
+{% endblock %}
